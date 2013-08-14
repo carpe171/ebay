@@ -8,7 +8,6 @@ module Ebay # :nodoc:
     #  boolean_node :auto_pay_enabled, 'AutoPayEnabled', 'true', 'false', :optional => true
     #  boolean_node :b2_bvat_enabled, 'B2BVATEnabled', 'true', 'false', :optional => true
     #  boolean_node :catalog_enabled, 'CatalogEnabled', 'true', 'false', :optional => true
-    #  boolean_node :global_shipping_enabled, 'GlobalShippingEnabled', 'true', 'false', :optional => true
     #  text_node :category_id, 'CategoryID', :optional => true
     #  numeric_node :category_level, 'CategoryLevel', :optional => true
     #  text_node :category_name, 'CategoryName', :optional => true
@@ -35,7 +34,6 @@ module Ebay # :nodoc:
       boolean_node :auto_pay_enabled, 'AutoPayEnabled', 'true', 'false', :optional => true
       boolean_node :b2_bvat_enabled, 'B2BVATEnabled', 'true', 'false', :optional => true
       boolean_node :catalog_enabled, 'CatalogEnabled', 'true', 'false', :optional => true
-      boolean_node :global_shipping_enabled, 'GlobalShippingEnabled', 'true', 'false', :optional => true
       text_node :category_id, 'CategoryID', :optional => true
       numeric_node :category_level, 'CategoryLevel', :optional => true
       text_node :category_name, 'CategoryName', :optional => true
