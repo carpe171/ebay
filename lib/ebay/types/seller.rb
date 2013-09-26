@@ -52,7 +52,7 @@ module Ebay # :nodoc:
       boolean_node :cip_bank_account_stored, 'CIPBankAccountStored', 'true', 'false', :optional => true
       boolean_node :good_standing, 'GoodStanding', 'true', 'false', :optional => true
       text_node :merchandizing_pref, 'MerchandizingPref', :optional => true
-      boolean_node :qualifies_for_b2_bvat, 'QualifiesForB2BVAT', 'true', 'false'
+      boolean_node :qualifies_for_b2_bvat, 'QualifiesForB2BVAT', 'true', 'false', :optional => true
       text_node :seller_guarantee_level, 'SellerGuaranteeLevel', :optional => true
       text_node :seller_level, 'SellerLevel', :optional => true
       object_node :seller_payment_address, 'SellerPaymentAddress', :class => Address, :optional => true
