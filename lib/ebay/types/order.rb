@@ -51,6 +51,7 @@ module Ebay # :nodoc:
       money_node :adjustment_amount, 'AdjustmentAmount', :optional => true
       money_node :amount_paid, 'AmountPaid', :optional => true
       money_node :amount_saved, 'AmountSaved', :optional => true
+      text_node :cancel_status, 'CancelStatus', :optional => true
       object_node :checkout_status, 'CheckoutStatus', :class => CheckoutStatus, :optional => true
       object_node :shipping_details, 'ShippingDetails', :class => ShippingDetails, :optional => true
       text_node :creating_user_role, 'CreatingUserRole', :optional => true
