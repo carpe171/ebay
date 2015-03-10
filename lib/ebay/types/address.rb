@@ -1,3 +1,4 @@
+require 'ebay/types/address_attribute'
 
 module Ebay # :nodoc:
   module Types # :nodoc:
@@ -35,6 +36,7 @@ module Ebay # :nodoc:
     #  text_node :phone2, 'Phone2', :optional => true
     #  text_node :address_usage, 'AddressUsage', :optional => true
     #  text_node :reference_id, 'ReferenceID', :optional => true
+    #  array_node :address_attributes, 'AddressAttribute', :class => AddressAttribute, :default_value => []
     class Address
       include XML::Mapping
       include Initializer
@@ -72,6 +74,7 @@ module Ebay # :nodoc:
       text_node :phone2, 'Phone2', :optional => true
       text_node :address_usage, 'AddressUsage', :optional => true
       text_node :reference_id, 'ReferenceID', :optional => true
+      array_node :address_attributes, 'AddressAttribute', :class => AddressAttribute, :default_value => []
     end
   end
 end

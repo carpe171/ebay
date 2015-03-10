@@ -9,6 +9,7 @@ module Ebay # :nodoc:
     #  text_node :status, 'Status', :optional => true
     #  boolean_node :integrated_merchant_credit_card_enabled, 'IntegratedMerchantCreditCardEnabled', 'true', 'false', :optional => true
     #  object_node :ebay_payment_mismatch_details, 'eBayPaymentMismatchDetails', :class => EBayPaymentMismatchDetails, :optional => true
+    #  text_node :payment_instrument, 'PaymentInstrument', :optional => true
     class CheckoutStatus
       include XML::Mapping
       include Initializer
@@ -19,6 +20,7 @@ module Ebay # :nodoc:
       text_node :status, 'Status', :optional => true
       boolean_node :integrated_merchant_credit_card_enabled, 'IntegratedMerchantCreditCardEnabled', 'true', 'false', :optional => true
       object_node :ebay_payment_mismatch_details, 'eBayPaymentMismatchDetails', :class => EBayPaymentMismatchDetails, :optional => true
+      text_node :payment_instrument, 'PaymentInstrument', :optional => true
     end
   end
 end

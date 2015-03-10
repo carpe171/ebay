@@ -123,6 +123,7 @@ require 'ebay/types/seller_provided_title_supported_definition'
 require 'ebay/types/deposit_supported_definition'
 require 'ebay/types/global_shipping_enabled_definition'
 require 'ebay/types/additional_compatibility_enabled_definition'
+require 'ebay/types/pickup_drop_off_enabled_definition'
 
 module Ebay # :nodoc:
   module Types # :nodoc:
@@ -254,6 +255,7 @@ module Ebay # :nodoc:
     #  object_node :deposit_supported, 'DepositSupported', :class => DepositSupportedDefinition, :optional => true
     #  object_node :global_shipping_enabled, 'GlobalShippingEnabled', :class => GlobalShippingEnabledDefinition, :optional => true
     #  object_node :additional_compatibility_enabled, 'AdditionalCompatibilityEnabled', :class => AdditionalCompatibilityEnabledDefinition, :optional => true
+    #  object_node :pickup_drop_off_enabled, 'PickupDropOffEnabled', :class => PickupDropOffEnabledDefinition, :optional => true
     class FeatureDefinitions
       include XML::Mapping
       include Initializer
@@ -385,6 +387,7 @@ module Ebay # :nodoc:
       object_node :deposit_supported, 'DepositSupported', :class => DepositSupportedDefinition, :optional => true
       object_node :global_shipping_enabled, 'GlobalShippingEnabled', :class => GlobalShippingEnabledDefinition, :optional => true
       object_node :additional_compatibility_enabled, 'AdditionalCompatibilityEnabled', :class => AdditionalCompatibilityEnabledDefinition, :optional => true
+      object_node :pickup_drop_off_enabled, 'PickupDropOffEnabled', :class => PickupDropOffEnabledDefinition, :optional => true
     end
   end
 end

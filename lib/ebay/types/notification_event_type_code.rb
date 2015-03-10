@@ -96,6 +96,10 @@ module Ebay # :nodoc:
       UnmatchedPaymentReceived = 'UnmatchedPaymentReceived'
       RefundSuccess = 'RefundSuccess'
       RefundFailure = 'RefundFailure'
+      PaymentReminder = 'PaymentReminder'
+      EBNOrderPickedUp = 'EBNOrderPickedUp'
+      EBNOrderCanceled = 'EBNOrderCanceled'
+      M2MMessageStatusChange = 'M2MMessageStatusChange'
     end
   end
 end

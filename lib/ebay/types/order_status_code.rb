@@ -13,6 +13,7 @@ module Ebay # :nodoc:
       InProcess = 'InProcess'
       Invalid = 'Invalid'
       All = 'All'
+      CancelPending = 'CancelPending'
     end
   end
 end

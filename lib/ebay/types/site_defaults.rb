@@ -133,6 +133,7 @@ module Ebay # :nodoc:
     #  boolean_node :deposit_supported, 'DepositSupported', 'true', 'false', :optional => true
     #  boolean_node :global_shipping_enabled, 'GlobalShippingEnabled', 'true', 'false', :optional => true
     #  boolean_node :additional_compatibility_enabled, 'AdditionalCompatibilityEnabled', 'true', 'false', :optional => true
+    #  boolean_node :pickup_drop_off_enabled, 'PickupDropOffEnabled', 'true', 'false', :optional => true
     class SiteDefaults
       include XML::Mapping
       include Initializer
@@ -264,6 +265,7 @@ module Ebay # :nodoc:
       boolean_node :deposit_supported, 'DepositSupported', 'true', 'false', :optional => true
       boolean_node :global_shipping_enabled, 'GlobalShippingEnabled', 'true', 'false', :optional => true
       boolean_node :additional_compatibility_enabled, 'AdditionalCompatibilityEnabled', 'true', 'false', :optional => true
+      boolean_node :pickup_drop_off_enabled, 'PickupDropOffEnabled', 'true', 'false', :optional => true
     end
   end
 end

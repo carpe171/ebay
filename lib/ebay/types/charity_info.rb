@@ -5,6 +5,9 @@ module Ebay # :nodoc:
   module Types # :nodoc:
     # == Attributes
     #  text_node :name, 'Name', :optional => true
+    #  boolean_node :listing_np_email_notif_pref, 'ListingNPEmailNotifPref', 'true', 'false', :optional => true
+    #  text_node :listing_np_email, 'ListingNPEmail', :optional => true
+    #  text_node :listing_np_contact_name, 'ListingNPContactName', :optional => true
     #  text_node :mission, 'Mission', :optional => true
     #  text_node :logo_url, 'LogoURL', :optional => true
     #  text_node :status, 'Status', :optional => true
@@ -29,6 +32,9 @@ module Ebay # :nodoc:
       include Initializer
       root_element_name 'CharityInfo'
       text_node :name, 'Name', :optional => true
+      boolean_node :listing_np_email_notif_pref, 'ListingNPEmailNotifPref', 'true', 'false', :optional => true
+      text_node :listing_np_email, 'ListingNPEmail', :optional => true
+      text_node :listing_np_contact_name, 'ListingNPContactName', :optional => true
       text_node :mission, 'Mission', :optional => true
       text_node :logo_url, 'LogoURL', :optional => true
       text_node :status, 'Status', :optional => true

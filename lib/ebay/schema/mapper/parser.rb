@@ -13,6 +13,7 @@ require 'xsd/charset'
 require 'xsd/datatypes'
 require 'xsd/xmlparser'
 require 'wsdl/xmlSchema/parser'
+require 'wsdl/documentation'
 
 module Ebay
   module Schema

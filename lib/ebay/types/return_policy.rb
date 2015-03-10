@@ -20,6 +20,7 @@ module Ebay # :nodoc:
     #  text_node :shipping_cost_paid_by, 'ShippingCostPaidBy', :optional => true
     #  text_node :restocking_fee_value, 'RestockingFeeValue', :optional => true
     #  text_node :restocking_fee_value_option, 'RestockingFeeValueOption', :optional => true
+    #  boolean_node :extended_holiday_returns, 'ExtendedHolidayReturns', 'true', 'false', :optional => true
     class ReturnPolicy
       include XML::Mapping
       include Initializer
@@ -42,6 +43,7 @@ module Ebay # :nodoc:
       text_node :shipping_cost_paid_by, 'ShippingCostPaidBy', :optional => true
       text_node :restocking_fee_value, 'RestockingFeeValue', :optional => true
       text_node :restocking_fee_value_option, 'RestockingFeeValueOption', :optional => true
+      boolean_node :extended_holiday_returns, 'ExtendedHolidayReturns', 'true', 'false', :optional => true
     end
   end
 end

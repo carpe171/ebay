@@ -9,6 +9,17 @@ module Ebay # :nodoc:
       UPC = 'UPC'
       EAN = 'EAN'
       Date = 'Date'
+      CodiceFiscale = 'CodiceFiscale'
+      DNI = 'DNI'
+      RussianPassport = 'RussianPassport'
+      CPFTaxID = 'CPFTaxID'
+      TurkeyID = 'TurkeyID'
+      NIE = 'NIE'
+      NIF = 'NIF'
+      CEDULA = 'CEDULA'
+      NIT = 'NIT'
+      DriverLicense = 'DriverLicense'
+      CNPJ = 'CNPJ'
     end
   end
 end

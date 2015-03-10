@@ -125,6 +125,7 @@ module Ebay # :nodoc:
       DepositSupported = 'DepositSupported'
       GlobalShippingEnabled = 'GlobalShippingEnabled'
       AdditionalCompatibilityEnabled = 'AdditionalCompatibilityEnabled'
+      PickupDropOffEnabled = 'PickupDropOffEnabled'
     end
   end
 end
