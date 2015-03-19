@@ -2,12 +2,14 @@
 #
 # * Simple and easy to use Ruby implementation.
 # * Ability to return a raw response for calls that return an extremely large response such as GetCategoriesRequest.
-# * Up-to-date with the eBay API version 823
+# * Up-to-date with the eBay API version 907 (see ebaySvc.xsd, all ruby classes are compiled from that xsd)
 # * Months of usage in a production environment.
 # * Support for Platform Notifications baked right in.
 #
-# See the following article for details on how to get started:
-# http://www.codyfauser.com/articles/2006/11/22/ebay-api-client-for-ruby
-
 # For examples of many common tasks see the examples folder.
-
+#
+# See Rakefile for how to update the xsd and regenerate classes
+#
+# I did:
+# rvm use 1.9.3 (installed the older gems in gemspec)
+# bundle exec rake classes:generate
