@@ -10,8 +10,10 @@ module Ebay #:nodoc:
 
   class RequestError < EbayError #:nodoc:
     attr_reader :errors
-    def initialize(errors)
+    attr_reader :result
+    def initialize(errors, result = nil)
       @errors = errors
+      @result = result
     end
   end
 
@@ -202,7 +204,7 @@ module Ebay #:nodoc:
         result = XML::Mapping.load_object_from_xml(xml.root)
 
         if [Ebay::Types::AckCode::Failure, Ebay::Types::AckCode::PartialFailure].include?(result.ack)
-          raise RequestError.new(result.errors)
+          raise RequestError.new(result.errors, result)
         end
       when :raw
         result = content
