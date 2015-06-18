@@ -11,5 +11,7 @@
 # See Rakefile for how to update the xsd and regenerate classes
 #
 # I did:
-# rvm use 1.9.3 (installed the older gems in gemspec)
-# bundle exec rake classes:generate
+# rvm use 1.9.3 (installed the older gems in gemspec) for me rvm use 1.9.3@ebay gem set
+# bundle exec rake schema:update #downloads new xsd, updates version
+# bundle exec rake classes:generate #generates classes
+# ... may need to patch xsd and regenerate, see git logs
