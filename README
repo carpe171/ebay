@@ -15,9 +15,12 @@
 # bundle exec rake schema:update #downloads new xsd, updates version
 # make the following changes to xsd
 #
+e.g.
 <xs:element name="ShowSellerProfilePreferences" type="xs:boolean">
 <xs:element name="ShowSellerProfilePreferences" type="xs:boolean" minOccurs="0">
-to:
+
+on the following nodes: (the xsd is plain wrong, if you match with ebay api example docs, they are optional)
+
 ShowSellerProfilePreferences
 ShowBidderNoticePreferences
 ShowCombinedPaymentPreferences
@@ -34,4 +37,3 @@ GoodStanding
 StoreOwner
 
 # bundle exec rake classes:generate #generates classes
-# ... may need to patch xsd and regenerate, see git logs
