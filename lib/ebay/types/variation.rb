@@ -2,6 +2,7 @@ require 'ebay/types/name_value_list'
 require 'ebay/types/selling_status'
 require 'ebay/types/selling_manager_product_inventory_status'
 require 'ebay/types/discount_price_info'
+require 'ebay/types/variation_product_listing_details'
 
 module Ebay # :nodoc:
   module Types # :nodoc:
@@ -20,6 +21,7 @@ module Ebay # :nodoc:
     #  numeric_node :watch_count, 'WatchCount', :optional => true
     #  text_node :private_notes, 'PrivateNotes', :optional => true
     #  object_node :discount_price_info, 'DiscountPriceInfo', :class => DiscountPriceInfo, :optional => true
+    #  object_node :variation_product_listing_details, 'VariationProductListingDetails', :class => VariationProductListingDetails, :optional => true
     class Variation
       include XML::Mapping
       include Initializer
@@ -38,6 +40,7 @@ module Ebay # :nodoc:
       numeric_node :watch_count, 'WatchCount', :optional => true
       text_node :private_notes, 'PrivateNotes', :optional => true
       object_node :discount_price_info, 'DiscountPriceInfo', :class => DiscountPriceInfo, :optional => true
+      object_node :variation_product_listing_details, 'VariationProductListingDetails', :class => VariationProductListingDetails, :optional => true
     end
   end
 end

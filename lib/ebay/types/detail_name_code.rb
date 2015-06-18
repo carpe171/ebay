@@ -27,6 +27,7 @@ module Ebay # :nodoc:
       ExcludeShippingLocationDetails = 'ExcludeShippingLocationDetails'
       RecoupmentPolicyDetails = 'RecoupmentPolicyDetails'
       ShippingCategoryDetails = 'ShippingCategoryDetails'
+      ProductDetails = 'ProductDetails'
     end
   end
 end

@@ -14,8 +14,6 @@ module Ebay # :nodoc:
     #  text_node :details_url, 'DetailsURL', :optional => true
     #  text_node :product_details_url, 'ProductDetailsURL', :optional => true
     #  boolean_node :return_search_result_on_duplicates, 'ReturnSearchResultOnDuplicates', 'true', 'false', :optional => true
-    #  boolean_node :list_if_no_product, 'ListIfNoProduct', 'true', 'false', :optional => true
-    #  text_node :gtin, 'GTIN', :optional => true
     #  text_node :isbn, 'ISBN', :optional => true
     #  text_node :upc, 'UPC', :optional => true
     #  text_node :ean, 'EAN', :optional => true
@@ -36,8 +34,6 @@ module Ebay # :nodoc:
       text_node :details_url, 'DetailsURL', :optional => true
       text_node :product_details_url, 'ProductDetailsURL', :optional => true
       boolean_node :return_search_result_on_duplicates, 'ReturnSearchResultOnDuplicates', 'true', 'false', :optional => true
-      boolean_node :list_if_no_product, 'ListIfNoProduct', 'true', 'false', :optional => true
-      text_node :gtin, 'GTIN', :optional => true
       text_node :isbn, 'ISBN', :optional => true
       text_node :upc, 'UPC', :optional => true
       text_node :ean, 'EAN', :optional => true

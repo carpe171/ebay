@@ -11,6 +11,7 @@ require 'ebay/types/purchase_reminder_email_preferences'
 require 'ebay/types/seller_profile_preferences'
 require 'ebay/types/seller_return_preferences'
 require 'ebay/types/dispatch_cutoff_time_preferences'
+require 'ebay/types/ebay_plus_preference'
 
 module Ebay # :nodoc:
   module Responses # :nodoc:
@@ -36,6 +37,7 @@ module Ebay # :nodoc:
     #  boolean_node :override_gsp_service_with_intl_service_preference, 'OverrideGSPServiceWithIntlServicePreference', 'true', 'false', :optional => true
     #  boolean_node :pickup_dropoff_seller_preference, 'PickupDropoffSellerPreference', 'true', 'false', :optional => true
     #  boolean_node :out_of_stock_control_preference, 'OutOfStockControlPreference', 'true', 'false', :optional => true
+    #  array_node :ebay_plus_preferences, 'eBayPLUSPreference', :class => EBayPLUSPreference, :default_value => []
     class GetUserPreferences < Abstract
       include XML::Mapping
       include Initializer
@@ -61,6 +63,7 @@ module Ebay # :nodoc:
       boolean_node :override_gsp_service_with_intl_service_preference, 'OverrideGSPServiceWithIntlServicePreference', 'true', 'false', :optional => true
       boolean_node :pickup_dropoff_seller_preference, 'PickupDropoffSellerPreference', 'true', 'false', :optional => true
       boolean_node :out_of_stock_control_preference, 'OutOfStockControlPreference', 'true', 'false', :optional => true
+      array_node :ebay_plus_preferences, 'eBayPLUSPreference', :class => EBayPLUSPreference, :default_value => []
     end
   end
 end

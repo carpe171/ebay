@@ -13,5 +13,25 @@
 # I did:
 # rvm use 1.9.3 (installed the older gems in gemspec) for me rvm use 1.9.3@ebay gem set
 # bundle exec rake schema:update #downloads new xsd, updates version
+# make the following changes to xsd
+#
+<xs:element name="ShowSellerProfilePreferences" type="xs:boolean">
+<xs:element name="ShowSellerProfilePreferences" type="xs:boolean" minOccurs="0">
+to:
+ShowSellerProfilePreferences
+ShowBidderNoticePreferences
+ShowCombinedPaymentPreferences
+ShowCrossPromotionPreferences
+ShowSellerPaymentPreferences
+ItemRevised
+QualifiesForB2BVAT
+StoreCategoryID
+StoreCategory2ID
+AllowPaymentEdit
+CheckoutEnabled
+CIPBankAccountStored
+GoodStanding
+StoreOwner
+
 # bundle exec rake classes:generate #generates classes
 # ... may need to patch xsd and regenerate, see git logs

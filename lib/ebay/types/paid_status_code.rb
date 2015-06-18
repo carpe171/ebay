@@ -21,6 +21,7 @@ module Ebay # :nodoc:
       WaitingForCODPayment = 'WaitingForCODPayment'
       PaidCOD = 'PaidCOD'
       Paid = 'Paid'
+      PayUponInvoice = 'PayUponInvoice'
     end
   end
 end

@@ -4,6 +4,7 @@ module Ebay # :nodoc:
     # == Attributes
     #  boolean_node :include, 'Include', 'true', 'false', :optional => true
     #  boolean_node :include_item_count, 'IncludeItemCount', 'true', 'false', :optional => true
+    #  boolean_node :include_favorite_searche_count, 'IncludeFavoriteSearcheCount', 'true', 'false', :optional => true
     #  boolean_node :include_favorite_seller_count, 'IncludeFavoriteSellerCount', 'true', 'false', :optional => true
     #  text_node :sort, 'Sort', :optional => true
     #  numeric_node :max_results, 'MaxResults', :optional => true
@@ -15,6 +16,7 @@ module Ebay # :nodoc:
       root_element_name 'MyeBaySelection'
       boolean_node :include, 'Include', 'true', 'false', :optional => true
       boolean_node :include_item_count, 'IncludeItemCount', 'true', 'false', :optional => true
+      boolean_node :include_favorite_searche_count, 'IncludeFavoriteSearcheCount', 'true', 'false', :optional => true
       boolean_node :include_favorite_seller_count, 'IncludeFavoriteSellerCount', 'true', 'false', :optional => true
       text_node :sort, 'Sort', :optional => true
       numeric_node :max_results, 'MaxResults', :optional => true

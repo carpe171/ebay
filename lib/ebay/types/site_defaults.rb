@@ -121,6 +121,9 @@ module Ebay # :nodoc:
     #  object_node :condition_values, 'ConditionValues', :class => ConditionValues, :optional => true
     #  boolean_node :value_category, 'ValueCategory', 'true', 'false', :optional => true
     #  text_node :product_creation_enabled, 'ProductCreationEnabled', :optional => true
+    #  text_node :ean_enabled, 'EANEnabled', :optional => true
+    #  text_node :isbn_enabled, 'ISBNEnabled', :optional => true
+    #  text_node :upc_enabled, 'UPCEnabled', :optional => true
     #  numeric_node :max_granular_fitment_count, 'MaxGranularFitmentCount', :optional => true
     #  text_node :compatible_vehicle_type, 'CompatibleVehicleType', :optional => true
     #  text_node :payment_options_group, 'PaymentOptionsGroup', :optional => true
@@ -253,6 +256,9 @@ module Ebay # :nodoc:
       object_node :condition_values, 'ConditionValues', :class => ConditionValues, :optional => true
       boolean_node :value_category, 'ValueCategory', 'true', 'false', :optional => true
       text_node :product_creation_enabled, 'ProductCreationEnabled', :optional => true
+      text_node :ean_enabled, 'EANEnabled', :optional => true
+      text_node :isbn_enabled, 'ISBNEnabled', :optional => true
+      text_node :upc_enabled, 'UPCEnabled', :optional => true
       numeric_node :max_granular_fitment_count, 'MaxGranularFitmentCount', :optional => true
       text_node :compatible_vehicle_type, 'CompatibleVehicleType', :optional => true
       text_node :payment_options_group, 'PaymentOptionsGroup', :optional => true

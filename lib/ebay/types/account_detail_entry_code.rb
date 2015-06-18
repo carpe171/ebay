@@ -289,6 +289,8 @@ module Ebay # :nodoc:
       CreditEBPReimbursement = 'CreditEBPReimbursement'
       FeePromotedListingFeature = 'FeePromotedListingFeature'
       CreditPromotedListingFeature = 'CreditPromotedListingFeature'
+      FeeAd = 'FeeAd'
+      CreditAd = 'CreditAd'
     end
   end
 end

@@ -177,9 +177,9 @@ module Ebay # :nodoc:
     #  array_node :shipping_service_cost_override_lists, 'ShippingServiceCostOverrideList', 'ShippingServiceCostOverride', :class => ShippingServiceCostOverride, :default_value => []
     #  object_node :shipping_package_details, 'ShippingPackageDetails', :class => ShipPackageDetails, :optional => true
     #  boolean_node :top_rated_listing, 'TopRatedListing', 'true', 'false', :optional => true
+    #  object_node :quantity_restriction_per_buyer, 'QuantityRestrictionPerBuyer', :class => QuantityRestrictionPerBuyerInfo, :optional => true
     #  money_node :floor_price, 'FloorPrice', :optional => true
     #  money_node :ceiling_price, 'CeilingPrice', :optional => true
-    #  object_node :quantity_restriction_per_buyer, 'QuantityRestrictionPerBuyer', :class => QuantityRestrictionPerBuyerInfo, :optional => true
     #  boolean_node :is_intermediated_shipping_eligible, 'IsIntermediatedShippingEligible', 'true', 'false', :optional => true
     #  object_node :unit_info, 'UnitInfo', :class => UnitInfo, :optional => true
     #  numeric_node :relist_parent_id, 'RelistParentID', :optional => true
@@ -332,9 +332,9 @@ module Ebay # :nodoc:
       array_node :shipping_service_cost_override_lists, 'ShippingServiceCostOverrideList', 'ShippingServiceCostOverride', :class => ShippingServiceCostOverride, :default_value => []
       object_node :shipping_package_details, 'ShippingPackageDetails', :class => ShipPackageDetails, :optional => true
       boolean_node :top_rated_listing, 'TopRatedListing', 'true', 'false', :optional => true
+      object_node :quantity_restriction_per_buyer, 'QuantityRestrictionPerBuyer', :class => QuantityRestrictionPerBuyerInfo, :optional => true
       money_node :floor_price, 'FloorPrice', :optional => true
       money_node :ceiling_price, 'CeilingPrice', :optional => true
-      object_node :quantity_restriction_per_buyer, 'QuantityRestrictionPerBuyer', :class => QuantityRestrictionPerBuyerInfo, :optional => true
       boolean_node :is_intermediated_shipping_eligible, 'IsIntermediatedShippingEligible', 'true', 'false', :optional => true
       object_node :unit_info, 'UnitInfo', :class => UnitInfo, :optional => true
       numeric_node :relist_parent_id, 'RelistParentID', :optional => true
