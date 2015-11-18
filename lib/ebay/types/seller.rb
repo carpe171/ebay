@@ -11,7 +11,7 @@ module Ebay # :nodoc:
     #  numeric_node :paisa_pay_status, 'PaisaPayStatus', :optional => true
     #  boolean_node :allow_payment_edit, 'AllowPaymentEdit', 'true', 'false', :optional => true
     #  text_node :billing_currency, 'BillingCurrency', :optional => true
-    #  boolean_node :checkout_enabled, 'CheckoutEnabled', 'true', 'false', :optional => true
+    #  boolean_node :checkout_enabled, 'CheckoutEnabled', 'true', 'false'
     #  boolean_node :cip_bank_account_stored, 'CIPBankAccountStored', 'true', 'false', :optional => true
     #  boolean_node :good_standing, 'GoodStanding', 'true', 'false', :optional => true
     #  text_node :merchandizing_pref, 'MerchandizingPref', :optional => true
@@ -48,7 +48,7 @@ module Ebay # :nodoc:
       numeric_node :paisa_pay_status, 'PaisaPayStatus', :optional => true
       boolean_node :allow_payment_edit, 'AllowPaymentEdit', 'true', 'false', :optional => true
       text_node :billing_currency, 'BillingCurrency', :optional => true
-      boolean_node :checkout_enabled, 'CheckoutEnabled', 'true', 'false', :optional => true
+      boolean_node :checkout_enabled, 'CheckoutEnabled', 'true', 'false'
       boolean_node :cip_bank_account_stored, 'CIPBankAccountStored', 'true', 'false', :optional => true
       boolean_node :good_standing, 'GoodStanding', 'true', 'false', :optional => true
       text_node :merchandizing_pref, 'MerchandizingPref', :optional => true

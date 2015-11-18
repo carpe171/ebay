@@ -39,6 +39,7 @@ require 'ebay/types/ship_package_details'
 require 'ebay/types/quantity_restriction_per_buyer_info'
 require 'ebay/types/unit_info'
 require 'ebay/types/pickup_in_store_details'
+require 'ebay/types/digital_good_info'
 
 module Ebay # :nodoc:
   module Types # :nodoc:
@@ -194,6 +195,10 @@ module Ebay # :nodoc:
     #  boolean_node :available_for_pickup_drop_off, 'AvailableForPickupDropOff', 'true', 'false', :optional => true
     #  boolean_node :eligible_for_pickup_drop_off, 'EligibleForPickupDropOff', 'true', 'false', :optional => true
     #  boolean_node :live_auction, 'LiveAuction', 'true', 'false', :optional => true
+    #  object_node :digital_good_info, 'DigitalGoodInfo', :class => DigitalGoodInfo, :optional => true
+    #  boolean_node :ebay_plus, 'eBayPlus', 'true', 'false', :optional => true
+    #  boolean_node :ebay_plus_eligible, 'eBayPlusEligible', 'true', 'false', :optional => true
+    #  boolean_node :e_mail_delivery_available, 'eMailDeliveryAvailable', 'true', 'false', :optional => true
     class Item
       include XML::Mapping
       include Initializer
@@ -349,6 +354,10 @@ module Ebay # :nodoc:
       boolean_node :available_for_pickup_drop_off, 'AvailableForPickupDropOff', 'true', 'false', :optional => true
       boolean_node :eligible_for_pickup_drop_off, 'EligibleForPickupDropOff', 'true', 'false', :optional => true
       boolean_node :live_auction, 'LiveAuction', 'true', 'false', :optional => true
+      object_node :digital_good_info, 'DigitalGoodInfo', :class => DigitalGoodInfo, :optional => true
+      boolean_node :ebay_plus, 'eBayPlus', 'true', 'false', :optional => true
+      boolean_node :ebay_plus_eligible, 'eBayPlusEligible', 'true', 'false', :optional => true
+      boolean_node :e_mail_delivery_available, 'eMailDeliveryAvailable', 'true', 'false', :optional => true
     end
   end
 end

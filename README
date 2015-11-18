@@ -2,7 +2,7 @@
 #
 # * Simple and easy to use Ruby implementation.
 # * Ability to return a raw response for calls that return an extremely large response such as GetCategoriesRequest.
-# * Up-to-date with the eBay API version 907 (see ebaySvc.xsd, all ruby classes are compiled from that xsd)
+# * Up-to-date with the eBay API version 947 (see lib/ebay/schema/ebaySvc.xsd, all ruby classes are compiled from that xsd)
 # * Months of usage in a production environment.
 # * Support for Platform Notifications baked right in.
 #
@@ -35,5 +35,6 @@ CheckoutEnabled
 CIPBankAccountStored
 GoodStanding
 StoreOwner
+ShippingDiscount
 
 # bundle exec rake classes:generate #generates classes

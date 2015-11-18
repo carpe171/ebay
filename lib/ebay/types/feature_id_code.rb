@@ -129,6 +129,7 @@ module Ebay # :nodoc:
       GlobalShippingEnabled = 'GlobalShippingEnabled'
       AdditionalCompatibilityEnabled = 'AdditionalCompatibilityEnabled'
       PickupDropOffEnabled = 'PickupDropOffEnabled'
+      DigitalGoodDeliveryEnabled = 'DigitalGoodDeliveryEnabled'
     end
   end
 end

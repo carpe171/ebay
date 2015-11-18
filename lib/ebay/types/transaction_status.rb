@@ -15,6 +15,7 @@ module Ebay # :nodoc:
     #  text_node :inquiry_status, 'InquiryStatus', :optional => true
     #  text_node :return_status, 'ReturnStatus', :optional => true
     #  text_node :payment_instrument, 'PaymentInstrument', :optional => true
+    #  text_node :digital_status, 'DigitalStatus', :optional => true
     class TransactionStatus
       include XML::Mapping
       include Initializer
@@ -31,6 +32,7 @@ module Ebay # :nodoc:
       text_node :inquiry_status, 'InquiryStatus', :optional => true
       text_node :return_status, 'ReturnStatus', :optional => true
       text_node :payment_instrument, 'PaymentInstrument', :optional => true
+      text_node :digital_status, 'DigitalStatus', :optional => true
     end
   end
 end

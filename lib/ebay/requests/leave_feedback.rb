@@ -10,6 +10,8 @@ module Ebay # :nodoc:
     #  text_node :target_user, 'TargetUser', :optional => true
     #  array_node :seller_item_rating_details, 'SellerItemRatingDetailArray', 'ItemRatingDetails', :class => ItemRatingDetails, :default_value => []
     #  text_node :order_line_item_id, 'OrderLineItemID', :optional => true
+    #  text_node :item_arrived_within_edd_type, 'ItemArrivedWithinEDDType', :optional => true
+    #  boolean_node :item_delivered_within_edd, 'ItemDeliveredWithinEDD', 'true', 'false', :optional => true
     class LeaveFeedback < Abstract
       include XML::Mapping
       include Initializer
@@ -21,6 +23,8 @@ module Ebay # :nodoc:
       text_node :target_user, 'TargetUser', :optional => true
       array_node :seller_item_rating_details, 'SellerItemRatingDetailArray', 'ItemRatingDetails', :class => ItemRatingDetails, :default_value => []
       text_node :order_line_item_id, 'OrderLineItemID', :optional => true
+      text_node :item_arrived_within_edd_type, 'ItemArrivedWithinEDDType', :optional => true
+      boolean_node :item_delivered_within_edd, 'ItemDeliveredWithinEDD', 'true', 'false', :optional => true
     end
   end
 end

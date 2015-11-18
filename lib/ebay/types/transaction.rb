@@ -19,6 +19,8 @@ require 'ebay/types/payments_information'
 require 'ebay/types/pickup_options'
 require 'ebay/types/pickup_method_selected'
 require 'ebay/types/buyer_package_enclosure'
+require 'ebay/types/gift_summary'
+require 'ebay/types/digital_delivery_selected'
 
 module Ebay # :nodoc:
   module Types # :nodoc:
@@ -87,6 +89,10 @@ module Ebay # :nodoc:
     #  array_node :buyer_package_enclosures, 'BuyerPackageEnclosures', 'BuyerPackageEnclosure', :class => BuyerPackageEnclosure, :default_value => []
     #  text_node :inventory_reservation_id, 'InventoryReservationID', :optional => true
     #  text_node :extended_order_id, 'ExtendedOrderID', :optional => true
+    #  boolean_node :ebay_plus_transaction, 'eBayPlusTransaction', 'true', 'false', :optional => true
+    #  object_node :gift_summary, 'GiftSummary', :class => GiftSummary, :optional => true
+    #  object_node :digital_delivery_selected, 'DigitalDeliverySelected', :class => DigitalDeliverySelected, :optional => true
+    #  boolean_node :gift, 'Gift', 'true', 'false', :optional => true
     class Transaction
       include XML::Mapping
       include Initializer
@@ -155,6 +161,10 @@ module Ebay # :nodoc:
       array_node :buyer_package_enclosures, 'BuyerPackageEnclosures', 'BuyerPackageEnclosure', :class => BuyerPackageEnclosure, :default_value => []
       text_node :inventory_reservation_id, 'InventoryReservationID', :optional => true
       text_node :extended_order_id, 'ExtendedOrderID', :optional => true
+      boolean_node :ebay_plus_transaction, 'eBayPlusTransaction', 'true', 'false', :optional => true
+      object_node :gift_summary, 'GiftSummary', :class => GiftSummary, :optional => true
+      object_node :digital_delivery_selected, 'DigitalDeliverySelected', :class => DigitalDeliverySelected, :optional => true
+      boolean_node :gift, 'Gift', 'true', 'false', :optional => true
     end
   end
 end

@@ -291,6 +291,10 @@ module Ebay # :nodoc:
       CreditPromotedListingFeature = 'CreditPromotedListingFeature'
       FeeAd = 'FeeAd'
       CreditAd = 'CreditAd'
+      FeeUBIShippingLabel = 'FeeUBIShippingLabel'
+      CreditUBIShippingLabel = 'CreditUBIShippingLabel'
+      FeeeBayPlusSubscription = 'FeeeBayPlusSubscription'
+      CrediteBayPlusSubscription = 'CrediteBayPlusSubscription'
     end
   end
 end

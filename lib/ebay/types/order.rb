@@ -62,6 +62,7 @@ module Ebay # :nodoc:
     #  array_node :buyer_tax_identifiers, 'BuyerTaxIdentifier', :class => TaxIdentifier, :default_value => []
     #  array_node :buyer_package_enclosures, 'BuyerPackageEnclosures', 'BuyerPackageEnclosure', :class => BuyerPackageEnclosure, :default_value => []
     #  text_node :extended_order_id, 'ExtendedOrderID', :optional => true
+    #  boolean_node :contains_ebay_plus_transaction, 'ContainseBayPlusTransaction', 'true', 'false', :optional => true
     class Order
       include XML::Mapping
       include Initializer
@@ -111,6 +112,7 @@ module Ebay # :nodoc:
       array_node :buyer_tax_identifiers, 'BuyerTaxIdentifier', :class => TaxIdentifier, :default_value => []
       array_node :buyer_package_enclosures, 'BuyerPackageEnclosures', 'BuyerPackageEnclosure', :class => BuyerPackageEnclosure, :default_value => []
       text_node :extended_order_id, 'ExtendedOrderID', :optional => true
+      boolean_node :contains_ebay_plus_transaction, 'ContainseBayPlusTransaction', 'true', 'false', :optional => true
     end
   end
 end

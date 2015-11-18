@@ -4,6 +4,7 @@ module Ebay # :nodoc:
       extend Enumerable
       extend Enumeration
       Decimal = 'Decimal'
+      Numeric = 'Numeric'
       Text = 'Text'
       ISBN = 'ISBN'
       UPC = 'UPC'
