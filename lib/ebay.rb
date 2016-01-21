@@ -21,4 +21,4 @@ require 'support/cattr_accessor'
 require 'support/xml_mapping'
 
 # Include the main program file
-require 'ebay/ebay'
+require_relative 'ebay/ebay'

@@ -1,1 +1,1 @@
-require "ebay"
+require_relative "ebay"
