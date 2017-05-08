@@ -1,4 +1,4 @@
-require "lib/ebay/types/property"
+require "ebay/types/property"
 
 module Ebay # :nodoc:
   module Types # :nodoc:
