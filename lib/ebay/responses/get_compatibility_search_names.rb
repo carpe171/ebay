@@ -1,5 +1,4 @@
-require 'ebay/types/property'
-require 'ebay/types/property_name_metadata'
+require 'ebay/types/properties'
 
 module Ebay # :nodoc:
   module Responses # :nodoc:
