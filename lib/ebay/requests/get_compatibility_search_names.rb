@@ -4,7 +4,7 @@ module Ebay # :nodoc:
     class GetCompatibilitySearchNames < Abstract
       include XML::Mapping
       include Initializer
-      root_element_name 'GetProductMetadataBulkRequest'
+      root_element_name 'GetCompatibilitySearchNamesRequest'
       text_node :category_id, 'CategoryId', :optional => false
       text_node :dataset, 'Dataset', :optional => true
     end
