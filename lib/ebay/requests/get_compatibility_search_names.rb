@@ -1,7 +1,7 @@
 
 module Ebay # :nodoc:
   module Requests # :nodoc:
-    class GetProductMetadataBulk < Abstract
+    class GetCompatibilitySearchNames < Abstract
       include XML::Mapping
       include Initializer
       root_element_name 'GetProductMetadataBulkRequest'
