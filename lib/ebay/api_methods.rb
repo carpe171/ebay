@@ -377,6 +377,14 @@ module Ebay
     def get_client_alerts_auth_token(params = {})
       commit(Ebay::Requests::GetClientAlertsAuthToken, params)
     end
+    # Builds Ebay::Requests#GetCompatibilitySearchNames
+    #
+    # Returns Ebay::Responses#GetCompatibilitySearchNames
+    #
+    # Official Documentation for GetCompatibilitySearchNames[http://developer.ebay.com/DevZone/product-metadata/CallRef/getCompatibilitySearchNames.html]
+    def get_compatibility_search_names(params = {})
+      commit(Ebay::Requests::GetCompatibilitySearchNames, params)
+    end
     # Builds Ebay::Requests#GetContextualKeywords
     #
     # Returns Ebay::Responses#GetContextualKeywords
@@ -584,6 +592,14 @@ module Ebay
     # Official Documentation for GetProductFinderXSL[http://developer.ebay.com/DevZone/XML/docs/Reference/eBay/io_GetProductFinderXSL.html]
     def get_product_finder_xsl(params = {})
       commit(Ebay::Requests::GetProductFinderXSL, params)
+    end
+    # Builds Ebay::Requests#GetProductMetadataBulk
+    #
+    # Returns Ebay::Responses#GetProductMetadataBulk
+    #
+    # Official Documentation for GetProductMetadataBulk[http://developer.ebay.com/DevZone/product-metadata/CallRef/getProductMetadataBulk.html]
+    def get_product_metadata_bulk(params = {})
+      commit(Ebay::Requests::GetProductMetadataBulk, params)
     end
     # Builds Ebay::Requests#GetProductSearchPage
     #
