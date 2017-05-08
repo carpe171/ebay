@@ -1,4 +1,4 @@
-require "lib/ebay/types/property_name_metadata"
+require "ebay/types/property_name_metadata"
 
 module Ebay # :nodoc:
   module Types # :nodoc:
